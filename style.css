@@ -1,0 +1,151 @@
+/* Arrière-plan général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* texte blanc par défaut */
+}
+
+/* Effet foncé par-dessus l'image pour la lisibilité */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* assombrit l'arrière-plan */
+    z-index: -1;
+}
+
+/* Zone principale */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.1); /* fond semi-transparent */
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    color: #ffda44; /* jaune or */
+    margin-bottom: 20px;
+}
+
+/* Grille des packs */
+.packs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+/* Carte d'un pack */
+.pack {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #fff;
+}
+
+.pack img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pack:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    border: 2px solid #06a2f0;
+}
+
+.pack:hover img {
+    transform: scale(1.1);
+}
+
+/* Prix */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #ffda44;
+}
+
+/* Input quantité */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Total */
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+}
+
+/* Champ ID */
+.input-group {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Bouton WhatsApp stylisé */
+button {
+    background: #06a2f0;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button:hover {
+    background: #1ebe5c;
+    transform: scale(1.05);
+}
+
+/* Icône dans bouton */
+button::before {
+    content: "💬";
+    font-size: 20px;
+}
+#afeli{
+    
+    color: #06a2f0;
+    font-style: italic;
+}

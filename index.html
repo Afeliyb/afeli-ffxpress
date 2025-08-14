@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afeli-ff xpress</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LJ6C1H0GH7"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-LJ6C1H0GH7");
+  </script>
+  <body>
+    <div class="container">
+      <h1>💎 Bienvenue chez <span id="afeli">AFELI-FF</span></h1>
+
+      <div class="packs">
+        <div class="pack">
+          <img src="images/pack110.webp" alt="110 Diamants" />
+          <h3>110 Diamants</h3>
+          <p class="price">900 FCFA</p>
+          <input type="number" min="0" value="0" id="pack1" />
+        </div>
+
+        <div class="pack">
+          <img src="images/pack231.webp" alt="231 Diamants" />
+          <h3>231 Diamants</h3>
+          <p class="price">1700 FCFA</p>
+          <input type="number" min="0" value="0" id="pack2" />
+        </div>
+
+        <div class="pack">
+          <img src="images/pack583.webp" alt="583 Diamants" />
+          <h3>583 Diamants</h3>
+          <p class="price">3700 FCFA</p>
+          <input type="number" min="0" value="0" id="pack3" />
+        </div>
+
+        <div class="pack">
+          <img src="images/pack1188.webp" alt="1188 Diamants" />
+          <h3>1188 Diamants</h3>
+          <p class="price">7200 FCFA</p>
+          <input type="number" min="0" value="0" id="pack4" />
+        </div>
+      </div>
+
+      <div class="total" id="total">Total : 0 FCFA</div>
+
+      <div class="input-group">
+        <label>ID Free Fire :</label>
+        <input
+          type="text"
+          id="playerId"
+          placeholder="Entrez votre ID Free Fire"
+        />
+      </div>
+
+      <button onclick="commander()">Commander sur WhatsApp</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
